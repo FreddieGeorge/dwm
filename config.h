@@ -24,7 +24,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = {"", "", "󰄛", "", ""};
+static const char *tags[] = {"", "", "", ""};
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -62,7 +62,8 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "rofi", "-show", "drun", "-theme", "/home/flork/.config/rofi/launchers/type-3/style-10.rasi", NULL };
+// static const char *dmenucmd[] = { "rofi", "-show", "drun", "-theme", "/home/flork/.config/rofi/launchers/type-3/style-10.rasi", NULL };
+static const char *dmenucmd[] = { "rofi", "-show", "drun", NULL };
 static const char *termcmd[]  = { "alacritty", NULL };
 
 static const Key keys[] = {
